@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farak Hai - Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="listenButton">Listen</button>
+        <div id="popup" class="hidden">
+            <div class="album-wrapper">
+                <img id="albumArt" src="WhatsApp Image 2024-05-11 at 14.21.14.jpeg" alt="Album Art">
+            </div>
+            <h2>FARAK HAI</h2>
+            <p>Honey, Reign</p>
+            <audio id="audioPlayer" controls>
+                <source src="Untitled song (5).mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <!-- Add the download button -->
+            <a href="Untitled song (5).mp3" download class="download-button">Download</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

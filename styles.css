@@ -1,0 +1,171 @@
+/* styles.css */
+
+/* General styles */
+body {
+    background-color: #000000; /* Set your desired background color */
+    font-family: Arial, sans-serif; /* Choose an appropriate font */
+}
+
+/* Hide the popup initially */
+.hidden {
+    display: none;
+}
+
+/* Popup styling */
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #92a5b1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(224, 217, 217, 0.3);
+    text-align: center;
+}
+
+/* Play/pause button styling */
+#play-icon {
+    background-color: #007db5;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#play-icon:hover {
+    background-color: #005a80;
+}
+
+#play-icon::before {
+    content: "\u25B6";
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Progress slider styling */
+input[type="range"] {
+    width: 100%;
+    height: 3px;
+    margin: 10px 0;
+    background: linear-gradient(to right, rgba(0, 125, 181, 0.6), rgba(0, 125, 181, 0.2));
+    /* Other styling properties */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    /* Other styling properties */
+}
+
+/* Back button styling */
+.back-button {
+    background-color: #ddd;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #bbb;
+}
+
+.back-button::before {
+    content: "\u2190";
+    font-size: 20px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Album art wrapper */
+.album-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.album-wrapper::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.album-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* styles.css */
+
+/* Center the button horizontally and vertically */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+/* Style the "Listen" button */
+#listenButton {
+    background-color: #007db5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#listenButton:hover {
+    background-color: #005a80;
+}
+
+/* styles.css */
+
+/* General styles */
+/* ... (existing styles) ... */
+
+
+
+/* Style the download button */
+.download-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
